@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   
   # set the image for the vagrant box
   config.vm.box = "opensuse/Leap-15.2.x86_64"
+  # config.vm.synced_folder "argocd/", "/home/vagrant"
   ## Set the image version
   # config.vm.box_version = "15.2.31.212"
 

@@ -1,0 +1,8 @@
+piVersion: v1
+data:
+  {{ .Values.configmap.data }}
+  #version: alpine
+kind: ConfigMap
+metadata:
+  name: nginx-version
+  namespace: {{ .Values.namespace.name }} 
